@@ -1,24 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_wordcnt.c                                       :+:      :+:    :+:   */
+/*   ft_cntwords.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: calamber <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/05/07 16:34:02 by calamber          #+#    #+#             */
-/*   Updated: 2018/05/07 16:34:10 by calamber         ###   ########.fr       */
+/*   Created: 2018/08/16 19:44:02 by calamber          #+#    #+#             */
+/*   Updated: 2018/08/16 19:44:04 by calamber         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_wordcnt(const char *t, char c)
+int	ft_cntwords(const char *t, char c)
 {
 	int i;
 	int count;
 
-	i = 0;
-	count = 0;
+	i = -1;
+	i += 1;
+	count = -1;
+	count += 1;
 	while (t[i] != '\0')
 	{
 		while (t[i] == c)
